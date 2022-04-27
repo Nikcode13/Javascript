@@ -1,0 +1,28 @@
+<!--program to demonstrate javascript code to validate email address-->
+<html>
+<head>
+<script type="text/javascript">
+
+	function check_email()
+	{
+		var email_add = document.getElementById("email").value
+		if((email_add.indexOf("@")<=1)&&(email_add.lastIndexOf(".")<=2))
+		{
+			alert("not valid email,please try again");
+			return false;
+		}
+		else
+		{
+			alert("valid email");
+			return true;
+		}
+	}
+
+</script>
+</head>
+<body>
+
+<b>enter email :</b><input type="email" id="email" >
+<input type="button" value="submit" onclick="return check_email()">
+</body>
+</html>
