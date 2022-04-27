@@ -6,7 +6,7 @@
 	function check_email()
 	{
 		var email_add = document.getElementById("email").value
-		if((email_add.indexOf("@")<=1)&&(email_add.lastIndexOf(".")<=2))
+		if((email_add.indexOf("@")<=1)||(email_add.lastIndexOf(".")<=2))
 		{
 			alert("not valid email,please try again");
 			return false;
