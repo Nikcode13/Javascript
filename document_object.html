@@ -1,0 +1,33 @@
+
+<html >
+ <head>
+ <style>
+  </style> 
+ </head>
+ <body>
+ <div id="header">
+          <h1 id="logo">Nikita</h2>         <!--document element-->
+          <p>computer education</p>
+ </div>
+ <div>
+      <h4>courses</h4>
+      <li class="list">Javascript</li>
+	  <li class="list">Java</li>
+	  <li class="list">PHP</li>
+   	  <li class="list">C++</li>
+	  <li class="list">CSS</li>
+ </div>
+ <script>
+    var a = document.getElementById("logo");
+	a.style.color="red";
+	 
+	 var b =document.getElementsByClassName("list");
+	 b[1].innerHTML="python";
+
+	 var c =document.getElementsByTagName("li");
+	 c[1].style.backgroundColor="yellow";
+
+	  document.write("<h1>thank you</h1>");
+ </script>
+ </body>
+</html>

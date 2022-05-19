@@ -1,0 +1,65 @@
+
+<html>
+ <head>
+ <style>
+#form{
+		width:250px;
+		height:270px;
+		border:2px solid;
+		border-radius:19px;
+		padding-left:30px;
+		padding-top:30px;
+		background-color:rgb(220,44,42,0.8);
+		color:#fff;
+		
+}
+input{
+		width:225px;
+		padding:5px;
+		margin:8px;
+		border:1px solid #000;
+		border-radius:20px;
+}
+p{
+	padding-top:15px;
+	
+}
+</style>
+ </head>
+ <body>
+ <script>  
+        function validateform()
+		{  
+              var name=document.getElementById("n1").value;  
+              var password=document.getElementById("n2").value; 
+			  var number=document.getElementById("n3").value;  
+  
+              if (name==null || name=="")
+			  {  
+                   alert("Name can't be blank");  
+                   return false;  
+              }
+			  else if(password.length<6)
+			  {  
+                    alert("Password must be at least 6 characters long.");  
+                    return false;  
+              } 
+			   if(number.length<10 || number.length>10)
+			  {
+				  	alert("not a valid number");
+					return false;
+			  }
+        }  
+</script>  
+<body>  
+<form id="form" onsubmit="return validateform()" >  
+
+          Name: <input type="text" id="n1"><br/>  
+          Password: <input type="password" id="n2"><br/>  
+		     number:<input type="number" id="n3"><br/>
+         <p> <input type="submit" value="register"></p>  
+
+</form>  
+  
+ </body>
+</html>
